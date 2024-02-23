@@ -40,13 +40,7 @@ the app makes an API calls functions to the Nodejs backend application (you can 
 
 ## Run the application
 
-- You can either run
-
-   ```bash
-   npm start
-   ```
-
-- Or:
+- Run the command:
 
    ```bash
    npm start

@@ -4,7 +4,7 @@ export const showError = (text) => {
     Swal.fire({
         icon: "error",
         title: "Oops...",
-        text: text || "Operation successful",
+        text: text || "Operation failed",
     });
 };
 

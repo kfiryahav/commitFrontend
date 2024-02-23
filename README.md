@@ -43,7 +43,7 @@ the app makes an API calls functions to the Nodejs backend application (you can 
 - Run the command:
 
    ```bash
-   npm start
+   npm run start
    ```
 
 # Enjoy :)

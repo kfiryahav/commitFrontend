@@ -19,8 +19,6 @@ const Form = () => {
         delete formData.confirmPassword;
         try {
             const response = await postFormData(formData);
-            cookie.remove('email');
-            cookie.set('email', response.email);
             dispatch(setUserData(response)); // Dispatch action with API response
             reset();
         } catch (error) {

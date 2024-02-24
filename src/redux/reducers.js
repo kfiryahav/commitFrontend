@@ -1,5 +1,3 @@
-// redux/reducer.js
-
 import { SET_USER_DATA } from './actions';
 
 const initialState = {

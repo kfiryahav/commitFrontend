@@ -19,11 +19,6 @@ const Form = () => {
         delete formData.confirmPassword;
         try {
             const response = await postFormData(formData);
-            console.log(response);
-            if(response.code === 11000){
-                showError('Looks like we already have this user...')
-                return;
-            }
             cookie.remove('email');
             cookie.set('email', response.email);
             dispatch(setUserData(response)); // Dispatch action with API response

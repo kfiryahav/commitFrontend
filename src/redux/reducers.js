@@ -1,7 +1,10 @@
 import { SET_USER_DATA } from './actions';
 
 const initialState = {
-  userData: 'No user was added lately',
+    userData: {
+      email:null,
+      phone:null
+  },
 };
 
 const reducer = (state = initialState, action) => {

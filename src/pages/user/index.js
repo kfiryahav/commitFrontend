@@ -12,7 +12,7 @@ function User() {
 
     useEffect(() => {
         const email = cookie.get('email');
-        if (email) {
+        if (email && userData.email !== email) {
             getUser(email)
                 .then(userData => {
                     dispatch(setUserData(userData));

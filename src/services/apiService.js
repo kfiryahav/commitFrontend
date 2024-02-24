@@ -32,6 +32,9 @@ export const postFormData = async (formData) => {
         const response = await handleApiResponse('/users/addUser', 'POST', formData);
         return response;
     } catch (error) {
+        if(response.code === 11000){
+            showError('Looks like we already have this user...')
+        }
         throw new Error(error.message);
     }
 };

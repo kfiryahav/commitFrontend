@@ -17,7 +17,7 @@ const handleApiResponse = async (url, method, formData) => {
             throw new Error('Failed to fetch data');
         }
         if (method === 'POST') {
-            showSuccess("User is saved in DB!", "You clicked the button!");
+            showSuccess("User is saved in DB!", "You can find it in the user tab");
         }
 
         return await response.json();

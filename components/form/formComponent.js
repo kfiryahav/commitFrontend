@@ -5,10 +5,7 @@ import { useForm } from 'react-hook-form';
 import { useDispatch } from 'react-redux';
 import GenericInput from './genericInputComponent';
 import formInputs from '/src//services/formInputes'; // Import the input data array
-import cookie from 'js-cookie'; // Import the js-cookie library
 import SubmitBtn from './submitBtnComponent';
-import { showError } from '@/services/sawlService';
-
 
 const Form = () => {
     const { register, handleSubmit, reset, formState: { errors }, getValues } = useForm();
